@@ -13,10 +13,10 @@
             while (!isExit)
             {
                 Console.WriteLine("请输入第一个数");
-                num1 = Console.ReadLine();      
+                num1 = Console.ReadLine();
                 Console.WriteLine("请输入第二个数");
-                num2 = Console.ReadLine();               
-                if(!double.TryParse(num1, out number1) || !double.TryParse(num2, out number2))
+                num2 = Console.ReadLine();
+                if (!double.TryParse(num1, out number1) || !double.TryParse(num2, out number2))
                 {
                     Console.WriteLine("我们遇到了些问题，请重新输入\n");
                     continue;
