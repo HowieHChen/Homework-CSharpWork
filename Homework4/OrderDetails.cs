@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Homework4
 {
-    internal class OrderDetails
+    [Serializable]
+    public class OrderDetails
     {
         public OrderDetails()
         {

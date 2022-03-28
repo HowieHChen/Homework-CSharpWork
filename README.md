@@ -1,20 +1,25 @@
 # Homework-CSharpWork
 
-### ÎÄ¼şËµÃ÷
+### æ–‡ä»¶è¯´æ˜
 
-**CalculatorConsole** ×÷Òµ1-¿ØÖÆÌ¨¼ÆËãÆ÷
+**CalculatorConsole** ä½œä¸š1-æ§åˆ¶å°è®¡ç®—å™¨
 
-**CalculatorWinForm** ×÷Òµ1-Windows´°Ìå¼ÆËãÆ÷
+**CalculatorWinForm** ä½œä¸š1-Windowsçª—ä½“è®¡ç®—å™¨
 
-**Homework2** ×÷Òµ2 (Îå¸öÒªÇóÔÚÍ¬Ò»¸ö³ÌĞòÖĞ,Ïê¼û **Function1~5** )
+**Homework2** ä½œä¸š2 (äº”ä¸ªè¦æ±‚åœ¨åŒä¸€ä¸ªç¨‹åºä¸­,è¯¦è§ **Function1~5** )
 
-**Homework3** ×÷Òµ3<br>
-- **Lsit.cs**  c1 ·ºĞÍÁ´±í
-- **AlarmClock.cs**  c2 ÄÖÖÓ
-- **Program.cs**  Ö÷Èë¿Ú
+**Homework3** ä½œä¸š3<br>
+- **Lsit.cs**  c1 æ³›å‹é“¾è¡¨
+- **AlarmClock.cs**  c2 é—¹é’Ÿ
+- **Program.cs**  ä¸»å…¥å£
 
-**Homework4** ×÷Òµ4<br>
-- **Order.cs** ¶©µ¥Àà
-- **OrderDetails.cs** ¶©µ¥ÏêÇéÀà
-- **OrderService.cs** ¶©µ¥¹ÜÀíÀà
-- **Program.cs** Ö÷Èë¿Ú£¬°üº¬Á½¸öÎÊÌâ
+**Homework4** ä½œä¸š4<br>
+- **Order.cs** è®¢å•ç±»
+- **OrderDetails.cs** è®¢å•è¯¦æƒ…ç±»
+- **OrderService.cs** è®¢å•ç®¡ç†ç±»
+- **Program.cs** ä¸»å…¥å£ï¼ŒåŒ…å«ä¸¤ä¸ªé—®é¢˜
+
+**Homework4Tests** ä½œä¸š5çš„ç¬¬äºŒéƒ¨åˆ†(e2), æµ‹è¯•ç”¨ä¾‹
+
+**Homework5** ä½œä¸š5çš„ç¬¬ä¸‰éƒ¨åˆ†(e3), æ–‡ä»¶åˆå¹¶
+- ä½œä¸š5çš„ç¬¬ä¸€éƒ¨åˆ†(e1)å·²åœ¨ **Homework4** ä¸­ä¿®æ”¹

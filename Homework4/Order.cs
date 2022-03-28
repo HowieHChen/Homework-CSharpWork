@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Homework4
 {
-    internal class Order
+    [Serializable]
+    public class Order
     {
         public Order()
         {

@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace Homework4
 {
-    internal class OrderService
+    [Serializable]
+    public class OrderService
     {
-        List<Order> orders;
+        public List<Order> orders;
         public OrderService()
         {
             orders = new List<Order>();
@@ -126,15 +129,39 @@ namespace Homework4
             return q;
         }
 
-
-        public bool Exist(Order order)
+        public void RemoveAll()
         {
-            return orders.Contains(order);
+            orders.Clear();
         }
 
-        public bool Exist(int orderID)
+        public void PrintAll()
         {
-            return orders.Find(x => x.OrderID == orderID) != null;
+            foreach (var order in orders)
+            {
+                Console.WriteLine(order.ToString());
+                foreach (var item in order.Items)
+                {
+                    Console.WriteLine(item.ToString());
+                }
+            }
+        }
+
+        public void Export()
+        {
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Order>));
+            using (FileStream fs = new FileStream("orderdata.xml", FileMode.Create))
+            {
+                xmlSerializer.Serialize(fs, orders);
+            }
+        }
+
+        public void Import()
+        {
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Order>));
+            using (FileStream fs = new FileStream("orderdata.xml", FileMode.Open))
+            {
+                orders = (List<Order>)xmlSerializer.Deserialize(fs);
+            }
         }
     }
 }

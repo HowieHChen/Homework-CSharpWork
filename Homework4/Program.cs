@@ -8,7 +8,7 @@
             int i = -1;
             while (i != 0)
             {
-                Console.WriteLine("\n请选择功能:\n1.添加订单\n2.删除订单\n3.修改订单\n4.查找订单\n0.退出\n");
+                Console.WriteLine("\n请选择功能:\n1.添加订单\n2.删除订单\n3.修改订单\n4.查找订单\n5.导入\n6.导出\n7.打印所有订单\n0.退出\n");
                 string func = Console.ReadLine();
                 if(!int.TryParse(func, out i))
                 {
@@ -21,6 +21,9 @@
                     case 2: OrderDel(orderService); break;
                     case 3: OrderEdit(orderService); break;
                     case 4: OrderFind(orderService); break;
+                    case 5: OrderImport(orderService); break;
+                    case 6: OrderOutput(orderService); break;
+                    case 7: orderService.PrintAll(); break;
                     case 0: return;
                     default: continue;
                 }
@@ -214,6 +217,23 @@
                 }
             }
         }
+
+        public void OrderImport(OrderService orderService)
+        {
+            Console.WriteLine("正在导入订单");
+            orderService.Import();
+            Console.WriteLine("已导入以下订单");
+            orderService.PrintAll();
+        }
+
+        public void OrderOutput(OrderService orderService)
+        {
+            Console.WriteLine("正在导出订单");
+            orderService.Export();
+            Console.WriteLine("已导出以下订单");
+            orderService.PrintAll();
+        }
+
         public void FunctionLINQ()
         {
             Random random = new Random();
